@@ -32,6 +32,7 @@ import Logo from './lib/Logo.svelte'
     text-align: center;
     padding: 1em;
     margin: 0 auto;
+    background-color: rgb(236, 221, 219);
   }
 
   img{
