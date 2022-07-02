@@ -13,6 +13,10 @@
     Turn on {user.darkMode ? 'light mode' : 'dark mode' }
 </button>
 
+{#if user.darkMode}
+<p class={lightMode + 'paragraph'}>This block of text should only show in dark mode. Pretty cool, huh? </p>
+{/if}
+
 <style>
         /* --black: #000000ff;
         --rich-black-fogra-39: #111111ff;
@@ -21,7 +25,7 @@
         --flickr-blue: #0761d1ff;
         --french-rose: #ea558dff; */
     button{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:monospace;
         font-size: 2rem;
         padding: 1em;
         background-color: white;
@@ -33,6 +37,16 @@
         background-color: #111111ff ;
         color: white;
         box-shadow:10px 10px #ea558dff;
+    }
+
+    .darkparagraph{
+        margin: 2rem auto;
+        padding: 1rem;
+        max-width: 500px;
+        font-size: 1.2rem;
+        font-weight: 200;
+        background-color: #111111ff;
+        color: white;
     }
 
 </style>
