@@ -26,17 +26,17 @@
         --french-rose: #ea558dff; */
     button{
         font-family:monospace;
-        font-size: 2rem;
+        font-size: 0.8rem;
         padding: 1em;
         background-color: white;
-        box-shadow: 10px 10px #0761d1ff;
+        box-shadow: 4px 4px #0761d1ff;
         transition: 200ms;
     }
 
     .dark{
         background-color: #111111ff ;
         color: white;
-        box-shadow:10px 10px #ea558dff;
+        box-shadow:4px 4px #ea558dff;
     }
 
     .darkparagraph{

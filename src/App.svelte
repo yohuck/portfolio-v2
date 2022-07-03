@@ -1,26 +1,17 @@
 <script>
   import logo from './assets/logo_1_transparent.png'
-import IfBlocks from './lib/IfBlocks.svelte'
+import IfBlocks from './lib/IfBlocks.svelte';
+import ChunkyNav from './lib/chunkyNav.svelte';
 import Logo from './lib/Logo.svelte'
 </script>
 
 <main>
-  <img src={logo} alt="Svelte Logo" />
-  <Logo />
-  <h1>creative developer</h1>
-
-
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
-  
   <IfBlocks />
+  <!-- <ChunkyNav /> -->
+  <div class="wrapper">
+    <img src={logo} alt="Svelte Logo" />
+    
+  </div>
 </main>
 
 <style>
@@ -29,10 +20,27 @@ import Logo from './lib/Logo.svelte'
   }
 
   main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-align: center;
     padding: 1em;
     margin: 0 auto;
-    background-color: rgb(236, 221, 219);
+    background-color: rgb(219, 229, 236);
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(219, 229, 236, 0.936);
+    z-index: -1;
   }
 
   img{
@@ -63,5 +71,11 @@ import Logo from './lib/Logo.svelte'
     p {
       max-width: none;
     }
+  }
+
+  ifBlocks{
+    position: absolute;
+    top: 0;
+
   }
 </style>
