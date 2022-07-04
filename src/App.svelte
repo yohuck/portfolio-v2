@@ -4,7 +4,7 @@ import IfBlocks from './lib/IfBlocks.svelte';
 import ChunkyNav from './lib/chunkyNav.svelte';
 import Logo from './lib/Logo.svelte'
 </script>
-
+<ChunkyNav />
 <main>
   <IfBlocks />
   <!-- <ChunkyNav /> -->

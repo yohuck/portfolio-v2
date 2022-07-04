@@ -7,13 +7,12 @@
         <li>
             <a href="#">ABOUT</a>
         </li>
-    </ul>
-    <ul>
+
         <li>
             <a href="#">PROJECTS</a>
         </li>
-    </ul>
-    <ul>
+
+
         <li>
             <a href="#">CONTACT</a>
         </li>
@@ -27,14 +26,17 @@
         padding: 0;
     }
     li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        border: inset 2px solid black;
         padding: 1rem 0;
-        background-color: brown;
+        margin: 1rem;
+        background-color: white;
         color: white;
-        height: 10vh;
-        width: 100vh;
+        max-width: 10rem;
+        box-shadow: 4px 4px #0761d1ff;
+        border: 2px outset buttonborder;
+        transform: translate(30px, 20px) rotate(20deg);
+        /* height: 10vh;-
+        width: 100vh; */
     }
 </style>
