@@ -35,7 +35,7 @@
         max-width: 10rem;
         box-shadow: 4px 4px #0761d1ff;
         border: 2px outset buttonborder;
-        transform: translate(30px, 20px) rotate(20deg);
+        transform: translate(30px, 20px) rotate(0deg);
         /* height: 10vh;-
         width: 100vh; */
     }
