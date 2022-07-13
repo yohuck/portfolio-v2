@@ -33,7 +33,7 @@ body {
     text-align: center;
     padding: 1em;
     margin: 0 auto;
-    background-color: rgb(219, 229, 236);
+    background-color: #1E1B18;
   }
 
   .wrapper{
@@ -46,7 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(219, 229, 236, 0.936);
+    background-color: E3F2FD;
     z-index: -1;
   }
 

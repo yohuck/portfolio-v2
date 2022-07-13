@@ -1,6 +1,7 @@
 
 
 <script>
+    import Blob from "./blob.svelte";
 </script>
 
 <div class='container'>
@@ -10,9 +11,14 @@
     </section>
     <section>
         <h1>Page Two</h1>
+
     </section>
     <section>
         <h1>Page Three</h1>
+
+    </section>
+    <section>
+        <h1>Page Four</h1>
     </section>
 </div>
 
@@ -54,16 +60,16 @@
 
     section:nth-of-type(1){
         background-color: yellow;
-        background-color: rgba(219, 229, 236, 0.936);
+        background-color: #ffd23f;
     }
     section:nth-of-type(2){
-        background-color: green;
+        background-color: #540D6E;
     }
     section:nth-of-type(3){
-        background-color: purple;
+        background-color: #3BCEAC;
     }
     section:nth-of-type(4){
-        background-color: blue;
+        background-color: #EE4266;
     }
 
     h1{
