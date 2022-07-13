@@ -18,7 +18,25 @@
 
     </section>
     <section>
-        <h1>Page Four</h1>
+        <h4>Hi There! I'm Eric</h4>
+        <p>
+            I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
+        </p>
+        <p>
+            I'm a graduate of the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
+        </p>
+        <p>
+            I've spent the last decade working in customer operations for a sports technology startup and have built teams and processes from the ground up through aquisition.
+        </p>
+        <p>
+           I'm proficient with HTML, CSS, JavaScript, Node.JS, Express, MongoDB, SQL, React, and Svelte. I have experience with Bootstrap, Tailwind, and Bulma, but I'm just as happy writing custom css like you'll find here.
+        </p>
+        <p>
+            In my free time I'm a DJ, musician, tabletop gamer, and seltzer water enthusiast.
+        </p>
+        <p>
+           Check out my project gallery, my GitHub Data, or my Social Media Profiles. I'm a big proponent of Learning in Public and hope to continue on my development journey working with you.
+        </p>
     </section>
 </div>
 
@@ -77,5 +95,18 @@
         font-family: monospace;
         font-size: 1rem;
         line-height: 0.8 em;
+    }
+
+    h4{
+        font-size: 5rem;
+        text-align: left;
+        line-height: 4rem;
+        margin: 1rem auto;
+        max-width: 80%;
+    }
+
+    p{
+        width: 80%;
+        max-width: 800px;
     }
 </style>
