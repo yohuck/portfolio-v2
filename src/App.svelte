@@ -9,13 +9,13 @@ import Scroll from './lib/Scroll.svelte'
 <!-- <ChunkyNav /> -->
 <main>
   <Scroll />
-  <IfBlocks />
+  <!-- <IfBlocks /> -->
   <!-- <ChunkyNav /> -->
   <!-- <div class="wrapper">
     <img src={logo} alt="Logo" />
     
-  </div>
-</main> -->
+  </div> -->
+
 </main>
 
 <style>
@@ -46,11 +46,9 @@ body {
     z-index: -1;
   }
 
-  img{
-    max-width: 300px;
-  }
 
-  h1 {
+
+  /* h1 {
     color: #0761d1ff;
     text-transform: uppercase;
     font-size: 4rem;
@@ -58,7 +56,7 @@ body {
     line-height: 1.1;
     margin: 2rem auto;
     max-width: 14rem;
-  }
+  } */
 
   p {
     max-width: 14rem;

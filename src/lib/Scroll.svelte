@@ -1,6 +1,12 @@
+
+
+<script>
+</script>
+
 <div class='container'>
     <section>
-        <h1>Page One</h1>
+        <img src="\src\assets\logo_1_transparent.png" alt="Eric Lake Logo">
+        <h1>Web Developer</h1>
     </section>
     <section>
         <h1>Page Two</h1>
@@ -18,13 +24,20 @@
         padding: 0;
     }
 
+    img{
+    width: clamp(200px, 30%, 800px);
+}
+
+
+
     .container{
         width: 100vw;
         height: 100vh;
+        scroll-behavior: smooth;
         background-color: green;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        display: flex;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        /* display: flex; */
     }
 
 
@@ -36,10 +49,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
 
     section:nth-of-type(1){
         background-color: yellow;
+        background-color: rgba(219, 229, 236, 0.936);
     }
     section:nth-of-type(2){
         background-color: green;
@@ -52,7 +67,9 @@
     }
 
     h1{
+        text-align: center;
         font-family: monospace;
-        font-size: 10rem;
+        font-size: 1rem;
+        line-height: 0.8 em;
     }
 </style>
