@@ -4,11 +4,15 @@ import IfBlocks from './lib/IfBlocks.svelte';
 import ChunkyNav from './lib/chunkyNav.svelte';
 import Logo from './lib/Logo.svelte'
 import Scroll from './lib/Scroll.svelte'
+import Contact from './lib/contact.svelte';
+import Svgs from './lib/svgs.svelte';
 
 </script>
 <!-- <ChunkyNav /> -->
 <main>
   <Scroll />
+  <!-- <Contact /> -->
+  <Svgs />
   <!-- <IfBlocks /> -->
   <!-- <ChunkyNav /> -->
   <!-- <div class="wrapper">
@@ -45,6 +49,8 @@ body {
     background-color: rgba(219, 229, 236, 0.936);
     z-index: -1;
   }
+
+
 
 
 
