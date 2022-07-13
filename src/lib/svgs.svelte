@@ -1,8 +1,14 @@
 <script>
-    let rotated = 0;
+import Contact from "./contact.svelte";
+
+    let rotated = -100;
+    let test = document.querySelector('svg')
+    console.log(test)
     
 </script>
-<svg width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated=${rotated}>
+
+
+<svg id="contact"  width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated={rotated}>
     <g filter="url(#filter0_d_3_469)">
     <g style="mix-blend-mode:hard-light">
     <g style="mix-blend-mode:hard-light">
@@ -58,7 +64,7 @@
 
 
 <style>
-    svg{
+     svg{ 
         animation-duration: 20s;
         animation-name: negspin;
         animation-iteration-count: infinite;
@@ -105,3 +111,4 @@ svg{
 
 
 </style>
+
