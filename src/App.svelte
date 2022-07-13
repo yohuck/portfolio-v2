@@ -3,23 +3,26 @@
 import IfBlocks from './lib/IfBlocks.svelte';
 import ChunkyNav from './lib/chunkyNav.svelte';
 import Logo from './lib/Logo.svelte'
+import Scroll from './lib/Scroll.svelte'
+
 </script>
-<ChunkyNav />
+<!-- <ChunkyNav /> -->
 <main>
+  <Scroll />
   <IfBlocks />
   <!-- <ChunkyNav /> -->
-  <div class="wrapper">
-    <img src={logo} alt="Svelte Logo" />
+  <!-- <div class="wrapper">
+    <img src={logo} alt="Logo" />
     
   </div>
+</main> -->
 </main>
 
 <style>
   :root {
     font-family: monospace;
   }
-
-  main {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,7 +77,7 @@ import Logo from './lib/Logo.svelte'
   }
 
   ifBlocks{
-    position: absolute;
+    position: fixed;
     top: 0;
 
   }
