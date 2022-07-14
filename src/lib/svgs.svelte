@@ -1,14 +1,24 @@
 <script>
-import Contact from "./contact.svelte";
+
 
     let rotated = -100;
     let test = document.querySelector('svg')
     console.log(test)
     
+    export let contactToggle = false;
+
+    let handleClick = () => {
+        contactToggle = !contactToggle
+        console.log(contactToggle)
+    }
+
+    function validate() {
+		console.log("I'm the validate() function")
+	}
 </script>
 
 
-<svg id="contact"  width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated={rotated}>
+<svg id="contact" on:click={handleClick}  width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated={rotated}>
     <g filter="url(#filter0_d_3_469)">
     <g style="mix-blend-mode:hard-light">
     <g style="mix-blend-mode:hard-light">
@@ -62,6 +72,20 @@ import Contact from "./contact.svelte";
     </defs>
     </svg>
 
+    <div class="contact_container" id={contactToggle? "off" : "on"}>
+        <form on:submit|preventDefault={validate}>
+            <h1>Take me to your leader</h1>
+            <p>(As long as they're hiring)</p>
+            Email Address:
+            <input>
+            Message:
+            <textarea  cols="30" rows="10"></textarea>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+
 
 <style>
      svg{ 
@@ -107,6 +131,51 @@ svg{
         width: 5rem;
         max-width: 30rem;
         z-index: 10;
+    }
+
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    button{
+        padding: 0.75em;
+        font-family: monospace;
+        border: none;
+        font-weight: 900;
+        color: white;
+        background-color: #3BCEAC;
+       margin: 1rem auto;
+        max-width: 100px;
+    }
+
+    .contact_container{
+        position: fixed;
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+        background-color: #FFD23F;
+        z-index: 20;
+        padding: 2rem;
+        border-radius: 2px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 10px 10px rgba(78, 77, 77, 0.795);
+        transition: 0.6s;
+        transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    #off{
+        transform: translate(-50%, 300%);
+        transition: 0.6s;
+        transition-timing-function: ease-in-out;
+    }
+
+    h1{
+        margin-bottom: 0;
     }
 
 
