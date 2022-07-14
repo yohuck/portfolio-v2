@@ -1,7 +1,7 @@
 
 
 <script>
-    import Blob from "./blob.svelte";
+
 </script>
 
 <div class='container'>
@@ -59,12 +59,7 @@
 </div>
 
 <style>
-    body{
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
+
 
     img{
     width: clamp(200px, 30%, 800px);
@@ -79,7 +74,6 @@
         background-color: green;
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
-        /* display: flex; */
     }
 
 

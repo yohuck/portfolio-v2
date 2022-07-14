@@ -1,14 +1,32 @@
 <script>
 import Contact from "./contact.svelte";
+import ContactForm from "./contact_form.svelte";
+// import Contact_form from "./contact_form.svelte";
 
-    let rotated = -100;
+
+let rotated = -100;
     let test = document.querySelector('svg')
     console.log(test)
     
+    function handleOnSubmit() {
+		console.log("I'm the handleOnSubmit() in App.svelte")
+	}
+
+    
+    let openContact = false;
+
+    const handleClick = () => {
+        openContact = !openContact
+        console.log(openContact)
+    }
+
+    
+ 
+
 </script>
 
 
-<svg id="contact"  width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated={rotated}>
+<svg on:click={handleClick} id="contact"  width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated={rotated}>
     <g filter="url(#filter0_d_3_469)">
     <g style="mix-blend-mode:hard-light">
     <g style="mix-blend-mode:hard-light">
@@ -62,20 +80,30 @@ import Contact from "./contact.svelte";
     </defs>
     </svg>
 
+<section id={openContact ? "contact_section_active" : "contact_section"}>
+        <div class="contact_text">
+            <h1>Take me to your leader</h1>
+            <p>(As long as they're hiring)</p>
+            <ContactForm on:submit={handleOnSubmit} />
+        </div>
+    </section>
+
 
 <style>
      svg{ 
-        animation-duration: 20s;
+        animation-duration: 10s;
         animation-name: negspin;
         animation-iteration-count: infinite;
         animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        z-index: 10;
     }
-    svg:hover{
+
+
+    /* svg:hover{
         animation-duration: 3s;
         animation-name: spin;
-        animation-iteration-count: infinite;
         animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-    }
+    } */
 
 
     @keyframes spin {
@@ -106,8 +134,49 @@ svg{
         position: fixed;
         width: 5rem;
         max-width: 30rem;
-        z-index: 10;
     }
+
+
+#contact_section{
+    display: flex;
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transform: translateY(100%);
+    transition: 1s;
+} 
+
+#contact_section h1, #contact_section p{
+    user-select: none;
+}
+
+#contact_section_active{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: 1s;
+} 
+
+
+.contact_text {
+     height: 40%; 
+     max-width: 800px; 
+    margin: 2rem auto;
+    background-color: paleturquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem;
+    border: 1px solid;
+  box-shadow: 5px 10px black;
+} 
 
 
 </style>
