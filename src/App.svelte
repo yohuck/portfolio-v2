@@ -23,4 +23,8 @@ import ContactForm from './lib/contact-form.svelte';
 
 
 
+
+/* Add the animation: property to whichever element you want to animate */
+
+
 </style>

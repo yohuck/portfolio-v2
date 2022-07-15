@@ -5,10 +5,12 @@
     let test = document.querySelector('svg')
     console.log(test)
     
-    export let contactToggle = false;
+    export let contactToggle = true;
+    let ufoToggle = true;
 
     let handleClick = () => {
         contactToggle = !contactToggle
+        ufoToggle = !ufoToggle
         console.log(contactToggle)
     }
 
@@ -71,10 +73,13 @@
     </filter>
     </defs>
     </svg>
-
+  
     <div class="contact_container" id={contactToggle? "off" : "on"}>
+
         <form on:submit|preventDefault={validate}>
-            <h1>Take me to your leader</h1>
+            <div class="group_ufo">
+                <h1>Take me to your leader</h1>  <img src="/src/assets/noun-ufo-1081704.svg" alt="hello" id={contactToggle? "off_ufo" : "on_ufo"}>
+            </div>
             <p>(As long as they're hiring)</p>
             Email Address:
             <input>
@@ -137,6 +142,7 @@ svg{
     form{
         display: flex;
         flex-direction: column;
+        position: relative;
 
     }
 
@@ -163,7 +169,7 @@ svg{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 10px 10px rgba(78, 77, 77, 0.795);
+        box-shadow: 10px 10px rgba(114, 112, 112, 0.493);
         transition: 0.6s;
         transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
@@ -177,6 +183,79 @@ svg{
     h1{
         margin-bottom: 0;
     }
+
+    img{
+    width: 100px;
+    transform: translate(0px, 0px) rotate(34deg) scale(1.5);
+    transition: 1s;
+    animation: tryNow 3s ease 0s 1 normal none;
+
+
+    /* position: fixed;
+    top: 0;
+    transform: translateX(-10vw);
+   
+    z-index: 200; */
+
+  }
+
+  .group_ufo{
+    display: flex;
+  }
+
+  #off_ufo{
+    animation: try 3s ease 0s 1 normal none;
+    /* transform: translate(1000px, 59px) rotate(34deg) scale(1.1); */
+
+    /* transform: translate(1000px, 59px) rotate(34deg) scale(1.1); */
+
+
+  }
+
+  
+  @keyframes tryNow {
+    0.0%{
+        transform: translate(30vw, -59px) rotate(-40deg) scale(0.3);
+        z-index: -200;
+    }
+    22.3%{
+
+        transform: translate(30vw, -59px) rotate(-40deg) scale(0.4);
+    }
+
+    71.2%{
+z-index:-200;
+        transform: translate(-30vw, 50vh) rotate(14deg) scale(1.3);
+    }
+
+    100%{
+        
+    transform: translate(0px, 0px) rotate(34deg) scale(1.5);
+    z-index: 300;
+    }
+
+}
+
+
+
+
+
+@keyframes try {
+
+    0.0%{
+        
+    transform: translate(0px, 0px) rotate(34deg) scale(1.5);
+    }
+
+    100.0%{
+        transform: translate(1000px, 59px) rotate(34deg) scale(1.1);
+    }
+
+}
+
+
+
+
 
 
 </style>
