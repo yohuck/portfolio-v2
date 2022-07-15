@@ -20,7 +20,20 @@
 </script>
 
 
+
+
+  
+
+
+
+
 <svg id="contact" on:click={handleClick}  width="254" height="254" viewBox="0 0 254 254" fill="none" xmlns="http://www.w3.org/2000/svg" data-rotated={rotated}>
+
+
+
+
+
+
     <g filter="url(#filter0_d_3_469)">
     <g style="mix-blend-mode:hard-light">
     <g style="mix-blend-mode:hard-light">
@@ -169,7 +182,7 @@ svg{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 10px 10px rgba(114, 112, 112, 0.493);
+        box-shadow: 10px 10px rgba(51, 50, 50, 0.596);
         transition: 0.6s;
         transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
@@ -185,10 +198,11 @@ svg{
     }
 
     img{
+
     width: 100px;
     transform: translate(0px, 0px) rotate(34deg) scale(1.5);
     transition: 1s;
-    animation: tryNow 3s ease 0s 1 normal none;
+    animation: tryNow 2s ease 0s 1 normal none;
 
 
     /* position: fixed;
@@ -204,7 +218,7 @@ svg{
   }
 
   #off_ufo{
-    animation: try 3s ease 0s 1 normal none;
+    animation: try 2s ease 0s 1 normal none;
     /* transform: translate(1000px, 59px) rotate(34deg) scale(1.1); */
 
     /* transform: translate(1000px, 59px) rotate(34deg) scale(1.1); */
@@ -215,17 +229,18 @@ svg{
   
   @keyframes tryNow {
     0.0%{
-        transform: translate(30vw, -59px) rotate(-40deg) scale(0.3);
+        transform: translate(30vw, -59px) rotate(40deg) scale(0.3);
         z-index: -200;
     }
     22.3%{
 
-        transform: translate(30vw, -59px) rotate(-40deg) scale(0.4);
+        transform: translate(30vw, -59px) rotate(-20deg) scale(0.4);
     }
+
 
     71.2%{
 z-index:-200;
-        transform: translate(-30vw, 50vh) rotate(14deg) scale(1.3);
+        transform: translate(-30vw, 10vh) rotate(-30deg) scale(2.2);
     }
 
     100%{
