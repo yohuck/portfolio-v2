@@ -66,7 +66,8 @@ let handleClick = () => {
         display: none;
         justify-content: flex-end;
         margin-right: 1rem;
-        transition: 0.3s;
+        transition: 0.5s;
+        transition-timing-function: ease-out;
     }
 
    .openBtn{
