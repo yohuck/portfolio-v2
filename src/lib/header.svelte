@@ -12,14 +12,21 @@ let handleClick = () => {
 
 
 
+
 let openContact = () => {
-    console.log('helloooo')
-    contactOpen.set(!open)
-    open = !open
+    let mql = window.matchMedia('(max-width: 500px)');
+    mql.matches? contactOpen.set(!open) : contactOpen.set(open)
+    mql.matches? open=!open : open =open
 }
 
+
+
+
+
 let closeDrawer = () => {
-    open = !open;
+    let mql = window.matchMedia('(max-width: 500px)');
+    console.log(mql)
+    mql.matches? open=!open : open =open
 }
 
 
