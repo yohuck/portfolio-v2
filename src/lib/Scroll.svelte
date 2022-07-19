@@ -6,7 +6,7 @@
 
 <div class='container'>
     <section>
-        <img src="\src\assets\logo_1_transparent.png" alt="Eric Lake Logo">
+        <img src="/images/logo_1_transparent.png" alt="Eric Lake Logo">
         <h1>Web Developer</h1>
     </section>
     <section id="about">

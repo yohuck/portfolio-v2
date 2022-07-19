@@ -109,7 +109,7 @@ import Counter from './Counter.svelte';
 
         <form on:submit|preventDefault={validate}>
             <div class="group_ufo">
-                <h1>Take me to your leader</h1>  <img src="/src/assets/noun-ufo-1081704.svg" alt="hello" id={contactToggle? "off_ufo" : "on_ufo"}>
+                <h1>Take me to your leader</h1>  <img src="/images/noun-ufo-1081704.svg" alt="hello" id={contactToggle? "off_ufo" : "on_ufo"}>
             </div>
             <p>(As long as they're hiring)</p>
             Email Address:
