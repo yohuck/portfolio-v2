@@ -92,7 +92,19 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        -ms-overflow-style: none;  /* IE and Edge */
+         scrollbar-width: none;  
     }
+
+   .container::-webkit-scrollbar{
+  display: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+
 
     section:nth-of-type(1){
         background-color: yellow;
