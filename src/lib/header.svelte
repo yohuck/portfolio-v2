@@ -1,8 +1,25 @@
-<script>    
+<script>   
+
+import {contactOpen} from '../../src/stores'
+
+// $: contactRead = contactOpen.subscribe(n => console.log(n))
+
 $: open = false
 let handleClick = () => {
     open = !open
     console.log(open)
+}
+
+
+
+let openContact = () => {
+    console.log('helloooo')
+    contactOpen.set(false)
+    open = !open
+}
+
+let closeDrawer = () => {
+    open = !open;
 }
 
 
@@ -12,16 +29,16 @@ let handleClick = () => {
 
     <ul>
         <li>
-            <a href="#">About</a>
+            <a href="#about" on:click={closeDrawer}>About</a>
         </li>
         <li>
-            <a href="#">Work</a>
+            <a href="#work" on:click={closeDrawer}>Work</a>
         </li>
         <li>
-            <a href="#">Data</a>
+            <a href="#data" on:click={closeDrawer} >Data</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a on:click={openContact}>Contact</a>
         </li>
     </ul>
     <button on:click={handleClick} class={open? 'openBtn' : 'closedBtn'}>

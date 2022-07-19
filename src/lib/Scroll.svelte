@@ -9,7 +9,7 @@
         <img src="\src\assets\logo_1_transparent.png" alt="Eric Lake Logo">
         <h1>Web Developer</h1>
     </section>
-    <section>
+    <section id="about">
         <h4>Hi There! I'm Eric</h4>
         <p>
             I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
@@ -31,11 +31,11 @@
         </p>
 
     </section>
-    <section>
+    <section id="work">
         <h1>Page Three</h1>
 
     </section>
-    <section>
+    <section id="data">
         <h4>Hi There! I'm Eric</h4>
         <p>
             I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.

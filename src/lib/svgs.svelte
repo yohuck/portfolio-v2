@@ -1,17 +1,31 @@
 <script>
 
+    import {contactOpen} from '../../src/stores'
+
+let subby = contactOpen.subscribe(n => {
+        console.log(n)
+        contactToggle = n
+    ufoToggle = n})
+
+
 
     let rotated = -100;
-    let test = document.querySelector('svg')
-    console.log(test)
+
+
     
-    export let contactToggle = true;
-    let ufoToggle = true;
+    $: contactToggle = true;
+    $: ufoToggle = true;
 
     let handleClick = () => {
-        contactToggle = !contactToggle
-        ufoToggle = !ufoToggle
-        console.log(contactToggle)
+        contactToggle = !contactToggle;
+        ufoToggle = !ufoToggle;
+        contactOpen.set(!ufoToggle)
+
+
+
+        // contactOpen.set(!contactOpen) ;
+        // console.log(contactToggle);
+        console.log(contactToggle);
     }
 
     function validate() {
