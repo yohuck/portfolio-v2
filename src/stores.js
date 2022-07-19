@@ -1,3 +1,3 @@
 import {writable} from 'svelte/store'
 
-export let contactOpen = writable()
+export let contactOpen = writable(true)

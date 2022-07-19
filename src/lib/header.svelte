@@ -14,7 +14,7 @@ let handleClick = () => {
 
 let openContact = () => {
     console.log('helloooo')
-    contactOpen.set(false)
+    contactOpen.set(!open)
     open = !open
 }
 
