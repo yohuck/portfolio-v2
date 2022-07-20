@@ -10,11 +10,12 @@ let moved;
     if (isDown == true) {
       console.log(e.clientX)
       console.log(box.scrollLeft)
-      box.scrollLeft =  starting-e.clientX
+      box.scrollLeft = moved ? moved + ( starting-e.clientX ) : starting-e.clientX
     } else return
   }
 
   const startMoving = (e) => {
+    moved = box.scrollLeft
     starting = e.clientX
     isDown = true;
     console.log(isDown)
