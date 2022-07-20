@@ -137,6 +137,8 @@
     }
 
 .scrollport{
+
+
     height: 100%;
     width: 90%;
     max-width: 100vw;
@@ -180,9 +182,13 @@
     max-height: 500px;
     aspect-ratio: 1;
     padding: 1rem;
-    margin: 1rem;
+    /* margin: 1rem; */
   /* block-size: 80%; */
   background-color: #ee4267bb;
+}
+
+.proj + .proj {
+    margin-left: 1rem;
 }
 
 
