@@ -45,7 +45,7 @@ let closeDrawer = () => {
             <a href="#data" on:click={closeDrawer} >Data</a>
         </li>
         <li>
-            <a on:click={openContact}>Contact</a>
+            <a href="#" on:click={openContact}>Contact</a>
         </li>
     </ul>
     <button on:click={handleClick} class={open? 'openBtn' : 'closedBtn'}>
