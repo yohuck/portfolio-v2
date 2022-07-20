@@ -2,6 +2,14 @@
 
 <script>
     import Blob from "./blob.svelte";
+
+
+    let isDown = false;
+let startX;
+let scrollLeft;
+
+
+    
 </script>
 
 <div class='container'>
@@ -113,6 +121,11 @@
 .container::-webkit-scrollbar {
     display: none;
 }
+   .scrollport::-webkit-scrollbar{
+  display: none;
+}
+
+
 
 
 
@@ -137,9 +150,11 @@
     }
 
 .scrollport{
+    cursor: grab;
 
 
-    height: 100%;
+    height: calc(90vw - 2rem);
+    max-height: 550px;
     width: 90%;
     max-width: 100vw;
     overflow-x: auto;
