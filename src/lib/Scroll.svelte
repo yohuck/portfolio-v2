@@ -2,11 +2,10 @@
 
 <script>
     import Blob from "./blob.svelte";
+    import Projects from "./projects.svelte";
 
 
-    let isDown = false;
-let startX;
-let scrollLeft;
+
 
 
     
@@ -40,18 +39,7 @@ let scrollLeft;
 
     </section>
     <section id="work">
-        <div class="scrollport">
-            <div class="proj" id="one"><p>This is one</p></div>
-            <div class="proj" id="two"><p>This is two</p></div>
-            <div class="proj" id="three"><p>This is three</p></div>
-            <div class="proj"><p>This is four</p></div>
-            <div class="proj"><p>This is five</p></div>
-            <div class="proj"><p>This is siz</p></div>
-            <div class="proj"><p>This is seven</p></div>
-            <div class="proj"><p>This is eight</p></div>
-
-        </div>
-
+        <Projects />
     </section>
     <section id="data">
         <h4>Hi There! I'm Eric</h4>
@@ -118,12 +106,8 @@ let scrollLeft;
   display: none;
 }
 
-.container::-webkit-scrollbar {
-    display: none;
-}
-   .scrollport::-webkit-scrollbar{
-  display: none;
-}
+
+
 
 
 
@@ -149,22 +133,7 @@ let scrollLeft;
 
     }
 
-.scrollport{
-    cursor: grab;
 
-
-    height: calc(90vw - 2rem);
-    max-height: 550px;
-    width: 90%;
-    max-width: 100vw;
-    overflow-x: auto;
-    /* overscroll-behavior-x: contain; */
-    display: flex; 
-    flex-direction: row; 
-    /* gap: 2rem; */
-    align-items: center;
-    justify-content: start;
-}
 
     
     section:nth-of-type(4){
@@ -192,19 +161,7 @@ let scrollLeft;
     }
 
 
- .proj {
-    height: calc(90vw - 2rem);
-    max-height: 500px;
-    aspect-ratio: 1;
-    padding: 1rem;
-    /* margin: 1rem; */
-  /* block-size: 80%; */
-  background-color: #ee4267bb;
-}
 
-.proj + .proj {
-    margin-left: 1rem;
-}
 
 
 
