@@ -10,7 +10,7 @@ let moved;
     if (isDown == true) {
       console.log(e.clientX)
       console.log(box.scrollLeft)
-      box.scrollLeft = moved ? moved + ( starting-e.clientX ) : starting-e.clientX
+      box.scrollLeft = moved ? moved + ( (starting-e.clientX)*1.4 ) : (starting-e.clientX)*1.4
     } else return
   }
 
@@ -19,6 +19,7 @@ let moved;
     starting = e.clientX
     isDown = true;
     console.log(isDown)
+    box.style.cursor = '-webkit-grabbing'
   }
 
   const stopMoving = (e) => {
@@ -27,6 +28,7 @@ let moved;
     moved = starting-ending
     isDown = false;
     console.log(isDown)
+    box.style.cursor = 'pointer'
   }
 
 
@@ -65,9 +67,9 @@ bind:this={box}
     cursor: grab;
 
 
-    height: calc(90vw - 2rem);
-    max-height: 550px;
-    width: 90%;
+    height: calc(100vw - 2rem);
+    max-height: 600px;
+    width: 100%;
     max-width: 100vw;
     overflow-x: auto;
     /* overscroll-behavior-x: contain; */
@@ -76,6 +78,7 @@ bind:this={box}
     /* gap: 2rem; */
     align-items: center;
     justify-content: start;
+    /* border: 1px solid green */
 }
 
 
@@ -86,7 +89,9 @@ bind:this={box}
     padding: 1rem;
     /* margin: 1rem; */
   /* block-size: 80%; */
-  background-color: #ee4267bb;
+  background-color: #ccf;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  margin: 1rem;
 }
 
 .proj + .proj {

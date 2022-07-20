@@ -81,7 +81,7 @@
     .container{
         width: 100vw;
         height: 100vh;
-        scroll-behavior: smooth;
+        /* scroll-behavior: smooth; */
         background-color: green;
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
