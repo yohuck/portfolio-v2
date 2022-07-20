@@ -32,7 +32,17 @@
 
     </section>
     <section id="work">
-        <h1>Page Three</h1>
+        <div class="scrollport">
+            <div class="proj" id="one"><p>This is one</p></div>
+            <div class="proj" id="two"><p>This is two</p></div>
+            <div class="proj" id="three"><p>This is three</p></div>
+            <div class="proj"><p>This is four</p></div>
+            <div class="proj"><p>This is five</p></div>
+            <div class="proj"><p>This is siz</p></div>
+            <div class="proj"><p>This is seven</p></div>
+            <div class="proj"><p>This is eight</p></div>
+
+        </div>
 
     </section>
     <section id="data">
@@ -92,7 +102,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        -ms-overflow-style: none;  /* IE and Edge */
+        /* -ms-overflow-style: none;  */
          scrollbar-width: none;  
     }
 
@@ -114,8 +124,32 @@
         background-color: #FFD23F;
     }
     section:nth-of-type(3){
-        background-color: #3BCEAC;
+    background-color: #3BCEAC;
+    /* overflow-x: auto;
+    overscroll-behavior-x: contain;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem; */
+
     }
+
+.scrollport{
+    height: 100%;
+    width: 90%;
+    max-width: 100vw;
+    overflow-x: auto;
+    /* overscroll-behavior-x: contain; */
+    display: flex; 
+    flex-direction: row; 
+    /* gap: 2rem; */
+    align-items: center;
+    justify-content: start;
+}
+
+    
     section:nth-of-type(4){
         background-color: #EE4266;
     }
@@ -139,4 +173,18 @@
         width: 80%;
         max-width: 800px;
     }
+
+
+ .proj {
+    height: calc(90vw - 2rem);
+    max-height: 500px;
+    aspect-ratio: 1;
+    padding: 1rem;
+    margin: 1rem;
+  /* block-size: 80%; */
+  background-color: #ee4267bb;
+}
+
+
+
 </style>
