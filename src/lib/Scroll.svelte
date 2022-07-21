@@ -28,15 +28,7 @@
             <p>
                 I've spent the last decade working in customer operations for a sports technology startup and have built teams and processes from the ground up through aquisition.
             </p>
-            <p>
-               I'm proficient with HTML, CSS, JavaScript, Node.JS, Express, MongoDB, SQL, React, and Svelte. I have experience with Bootstrap, Tailwind, and Bulma, but I'm just as happy writing custom css like you'll find here.
-            </p>
-            <p>
-                In my free time I'm a DJ, musician, tabletop gamer, and seltzer water enthusiast.
-            </p>
-            <p>
-               Check out my project gallery, my GitHub Data, or my Social Media Profiles. I'm a big proponent of Learning in Public and hope to continue on my development journey working with you.
-            </p>
+
         </article>
 
     </section>
