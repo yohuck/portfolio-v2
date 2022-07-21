@@ -1,4 +1,5 @@
 <script>
+import Sticky from './Sticky.svelte'
 let box;
 
 let isDown = false;
@@ -32,7 +33,7 @@ let moved;
   }
 
 
-let test = '500px';
+
 
 
 
@@ -44,14 +45,17 @@ let test = '500px';
 on:mousedown="{startMoving}"
 on:mousemove="{scrollPosition}"
 on:mouseup="{stopMoving}"
-scrolLeft = "{test}"
+bind:this={box}>
 
-bind:this={box} 
-
->
-  <div class="proj" id="one"><p>This is one</p></div>
-  <div class="proj" id="two"><p>This is two</p></div>
-  <div class="proj" id="three"><p>This is three</p></div>
+  <Sticky>
+    <span slot="title">Recycle Better</span>
+    <a href="https://yohuck.github.io/wish-cycle/" slot="github" >GitHub Repository</a>
+    <a href="https://yohuck.github.io/wish-cycle/" slot="live">Live Site</a>
+  </Sticky>
+  <Sticky></Sticky>
+  <Sticky></Sticky>
+  <Sticky></Sticky>
+  <Sticky></Sticky>
   <div class="proj"><p>This is four</p></div>
   <div class="proj"><p>This is five</p></div>
   <div class="proj"><p>This is siz</p></div>

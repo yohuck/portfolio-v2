@@ -17,50 +17,54 @@
         <h1>Web Developer</h1>
     </section>
     <section id="about">
-        <h4>Hi There! I'm Eric</h4>
-        <p>
-            I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
-        </p>
-        <p>
-            I'm a graduate of the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
-        </p>
-        <p>
-            I've spent the last decade working in customer operations for a sports technology startup and have built teams and processes from the ground up through aquisition.
-        </p>
-        <p>
-           I'm proficient with HTML, CSS, JavaScript, Node.JS, Express, MongoDB, SQL, React, and Svelte. I have experience with Bootstrap, Tailwind, and Bulma, but I'm just as happy writing custom css like you'll find here.
-        </p>
-        <p>
-            In my free time I'm a DJ, musician, tabletop gamer, and seltzer water enthusiast.
-        </p>
-        <p>
-           Check out my project gallery, my GitHub Data, or my Social Media Profiles. I'm a big proponent of Learning in Public and hope to continue on my development journey working with you.
-        </p>
+        <article class="yeller">
+            <h4>Hi There! I'm Eric</h4>
+            <p>
+                I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
+            </p>
+            <p>
+                I'm a graduate of the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
+            </p>
+            <p>
+                I've spent the last decade working in customer operations for a sports technology startup and have built teams and processes from the ground up through aquisition.
+            </p>
+            <p>
+               I'm proficient with HTML, CSS, JavaScript, Node.JS, Express, MongoDB, SQL, React, and Svelte. I have experience with Bootstrap, Tailwind, and Bulma, but I'm just as happy writing custom css like you'll find here.
+            </p>
+            <p>
+                In my free time I'm a DJ, musician, tabletop gamer, and seltzer water enthusiast.
+            </p>
+            <p>
+               Check out my project gallery, my GitHub Data, or my Social Media Profiles. I'm a big proponent of Learning in Public and hope to continue on my development journey working with you.
+            </p>
+        </article>
 
     </section>
     <section id="work">
         <Projects />
     </section>
     <section id="data">
-        <h4>Hi There! I'm Eric</h4>
-        <p>
-            I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
-        </p>
-        <p>
-            I'm a graduate of the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
-        </p>
-        <p>
-            I've spent the last decade working in customer operations for a sports technology startup and have built teams and processes from the ground up through aquisition.
-        </p>
-        <p>
-           I'm proficient with HTML, CSS, JavaScript, Node.JS, Express, MongoDB, SQL, React, and Svelte. I have experience with Bootstrap, Tailwind, and Bulma, but I'm just as happy writing custom css like you'll find here.
-        </p>
-        <p>
-            In my free time I'm a DJ, musician, tabletop gamer, and seltzer water enthusiast.
-        </p>
-        <p>
-           Check out my project gallery, my GitHub Data, or my Social Media Profiles. I'm a big proponent of Learning in Public and hope to continue on my development journey working with you.
-        </p>
+
+            <h4>Hi There! I'm Eric</h4>
+            <p>
+                I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
+            </p>
+            <p>
+                I'm a graduate of the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
+            </p>
+            <p>
+                I've spent the last decade working in customer operations for a sports technology startup and have built teams and processes from the ground up through aquisition.
+            </p>
+            <p>
+               I'm proficient with HTML, CSS, JavaScript, Node.JS, Express, MongoDB, SQL, React, and Svelte. I have experience with Bootstrap, Tailwind, and Bulma, but I'm just as happy writing custom css like you'll find here.
+            </p>
+            <p>
+                In my free time I'm a DJ, musician, tabletop gamer, and seltzer water enthusiast.
+            </p>
+            <p>
+               Check out my project gallery, my GitHub Data, or my Social Media Profiles. I'm a big proponent of Learning in Public and hope to continue on my development journey working with you.
+            </p>
+
     </section>
 </div>
 
@@ -118,7 +122,7 @@
         background-color: #EE4266;
     }
     section:nth-of-type(2){
-        background-color: #FFD23F;
+        background-color: #eeeadc;
     }
     section:nth-of-type(3){
     background-color: #3BCEAC;
@@ -131,6 +135,15 @@
     justify-content: center;
     padding: 5rem; */
 
+    }
+
+    .yeller{
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: #FFD23F;
+        max-width: 90%;
+        padding: 2rem;
+        box-shadow: 10px 10px rgba(10, 9, 9, 0.795);
     }
 
 
@@ -148,11 +161,12 @@
     }
 
     h4{
-        font-size: 5rem;
+        font-size: clamp(2rem, 2rem + 3vw, 5rem);
         text-align: left;
         line-height: 4rem;
         margin: 1rem auto;
-        max-width: 80%;
+        width: 80%;
+        max-width: 800px;
     }
 
     p{
