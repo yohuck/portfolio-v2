@@ -17,7 +17,12 @@
         <h1>Web Developer</h1>
     </section>
     <section id="about">
-        <article class="yeller">
+        <Blob />
+        <article class="yeller blob">
+
+           
+           
+
             <h4>Hi There! I'm Eric</h4>
             <p>
                 I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
@@ -85,6 +90,8 @@
     }
 
 
+
+
     section{
         flex: none;
         scroll-snap-align: start;
@@ -129,12 +136,20 @@
 
     }
 
+    #about{
+        position: relative;
+        overflow: hidden;
+    }
+
     .yeller{
+
         box-sizing: border-box;
         border-radius: 10px;
         background-color: #FFD23F;
-        max-width: 90%;
         padding: 2rem;
+        width: 90%;
+        max-width: 800px;
+        z-index: 3;
         box-shadow: 10px 10px rgba(10, 9, 9, 0.795);
     }
 
@@ -146,24 +161,24 @@
     }
 
     h1{
-        text-align: center;
-        font-family: monospace;
+        text-align: left;
         font-size: 1rem;
         line-height: 0.8 em;
     }
 
     h4{
-        font-size: clamp(2rem, 2rem + 3vw, 5rem);
+        font-size: clamp(2rem, 2rem + 5vw, 7rem);
         text-align: left;
-        line-height: 4rem;
+        line-height: 1em;
         margin: 1rem auto;
-        width: 80%;
         max-width: 800px;
     }
 
     p{
         width: 80%;
         max-width: 800px;
+        font-weight: 300;
+
     }
 
 

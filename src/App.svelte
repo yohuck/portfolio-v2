@@ -22,8 +22,15 @@ import { create_animation } from 'svelte/internal';
 </main>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,500;0,800;1,100;1,300&display=swap');
+
+
   :root {
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
 
