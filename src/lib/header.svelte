@@ -55,6 +55,7 @@ let closeDrawer = () => {
 
 <style>
     nav{
+        z-index: 10;
         text-align: right;
         width: 100%;
         position: fixed;

@@ -139,6 +139,7 @@
     #about{
         position: relative;
         overflow: hidden;
+        background-color: #af42ee;
     }
 
     .yeller{
