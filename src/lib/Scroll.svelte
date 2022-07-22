@@ -13,10 +13,10 @@
 </script>
 
 <div class='container'>
-    <section>
+    <!-- <section>
         <img src="/images/logo_1_transparent.png" alt="Eric Lake Logo">
         <h1>Web Developer</h1>
-    </section>
+    </section> -->
     <section id="about">
         <Blob />
         <article class="yeller blob">
@@ -26,10 +26,10 @@
 
             <h4>Hi There! I'm Eric</h4>
             <p>
-                I'm a web developer living in Englewood, CO. I love building whimsical, bold, clever UI and drinking coffee until it's time to drink wine.
+                I'm a web developer living in Englewood, CO. I love building whimsical, bold UI and drinking coffee until it's time to drink wine.
             </p>
             <p>
-                I'm a graduate of the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
+                I'm attending the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
             </p>
 
         </article>
