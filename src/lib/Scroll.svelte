@@ -129,7 +129,7 @@
         background-color: #FFD23F;
         padding: 1rem;
         width: 90%;
-        max-width: 800px;
+        max-width: 500px;
         z-index: 3;
         box-shadow: 10px 10px rgba(10, 9, 9, 0.795);
     }
