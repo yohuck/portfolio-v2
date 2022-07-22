@@ -39,7 +39,7 @@
     </section>
     <section id="data">
 
-            <h4>Hi There! I'm Eric</h4>
+            <h6>Thanks for checking out my portfolio, As you can probably tell, I'm still working on it. You can reach me at ericlake@me.com</h6>
 
 
     </section>
@@ -127,7 +127,7 @@
         box-sizing: border-box;
         border-radius: 10px;
         background-color: #FFD23F;
-        padding: 1rem;
+        padding: 2rem;
         width: 90%;
         max-width: 500px;
         z-index: 3;
@@ -148,15 +148,20 @@
     }
 
     h4{
-        font-size: clamp(2rem, 2rem + 5vw, 7rem);
+        font-size: clamp(2rem, 2rem + 5vw, 5rem);
         text-align: left;
         line-height: 1em;
-        margin: 1rem auto;
+        margin: 0rem auto;
         max-width: 800px;
     }
 
+    h6{
+        width: 90%;
+        margin: 0 auto;
+    }
+
     p{
-        width: 80%;
+        width: 100%;
         max-width: 800px;
         font-weight: 300;
 
