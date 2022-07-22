@@ -41,6 +41,7 @@ let moved;
 </script>
 
 
+
 <div class="scrollport"
 on:mousedown="{startMoving}"
 on:mousemove="{scrollPosition}"
@@ -66,6 +67,10 @@ bind:this={box}>
      .scrollport::-webkit-scrollbar{
   display: none;
 }
+
+
+
+
 
 .scrollport{
     cursor: grab;

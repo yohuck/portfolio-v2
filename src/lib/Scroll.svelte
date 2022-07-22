@@ -3,6 +3,7 @@
 <script>
     import Blob from "./blob.svelte";
     import Projects from "./projects.svelte";
+    import WorkInfo from "./work-info.svelte";
 
 
 
@@ -35,13 +36,14 @@
 
     </section>
     <section id="work">
+
         <Projects />
     </section>
     <section id="data">
 
             <h6>Thanks for checking out my portfolio, As you can probably tell, I'm still working on it. You can reach me at ericlake@me.com</h6>
 
-
+            <WorkInfo />
     </section>
 </div>
 
@@ -122,6 +124,10 @@
         background-color: #af42ee;
     }
 
+    #data{
+        position: relative;
+    }
+
     .yeller{
 
         box-sizing: border-box;
@@ -168,7 +174,18 @@
     }
 
 
+#work{
+    position: relative;
+}
 
+
+
+
+@media only screen and (min-width: 500px) {
+    .container{
+        scroll-behavior: smooth;
+    }
+}
 
 
 
