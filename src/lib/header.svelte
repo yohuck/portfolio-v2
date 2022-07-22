@@ -59,7 +59,7 @@ let closeDrawer = () => {
         text-align: right;
         width: 100%;
         position: fixed;
-        background-color: #FFD23F;
+        background-color: #ffd23ff6;
         border-bottom: 1px solid black;
         display: flex;
         justify-content: flex-end;
@@ -98,10 +98,12 @@ let closeDrawer = () => {
    .openBtn{
         transform: rotate(1080deg);
         border-radius: 999px;
+        
     }
 
     li {
         margin: 1rem 1rem;
+
     }
 
     a{        border: 1px solid black;
@@ -144,7 +146,9 @@ let closeDrawer = () => {
             display: flex;
         }
 
-        a{        border: 1px solid black;
+        a{       
+            box-sizing: border-box;
+             border: 2px solid black;
         padding: 1rem;
         text-decoration: none;
         color: black;

@@ -1,4 +1,4 @@
-<article class="portfolio-info">
+<article class="portfolio-info" transition-style="in:circle:center">
     <div class="info">
         <input type="button" id="x" value="x">
         <div class="info-text">
@@ -50,4 +50,17 @@
         width: 2rem;
         height: 2rem;
     }
+
+    @keyframes circle-in-center {
+  from {
+    clip-path: circle(0%);
+  }
+  to {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:center"] {
+  animation: 15s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+}
 </style>
