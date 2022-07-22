@@ -136,7 +136,7 @@ let closeDrawer = () => {
 
         li{
             margin-top: 3rem;
-            font-size: 4rem;
+            font-size: 3rem;
             margin-right: -3rem;
         }
 
