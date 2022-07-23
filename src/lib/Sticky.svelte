@@ -12,26 +12,31 @@
         <a href="http://ericallenlake.com" class="missing" >Unknown Link</a>
       </slot>
       <slot name="live">
-        <a href="http://ericallenlake.com" class="msising">Unknown Link</a>
+        <a href="http://ericallenlake.com" class="missing">Unknown Link</a>
       </slot>
     </div>
 
     <div class="description">
       <br>
       <code>
-        <span name="description" class="missing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellat nulla, distinctio quasi reiciendis sint quae beatae tempore sapiente vitae nobis dolor neque eaque excepturi similique repudiandae eius necessitatibus natus.</span>
+        <span name="description" class="missing">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
       </code>
     </div>
-    <div class="visual">
-      <img class='screen' src="/images/placeholder-image.png" alt="">
+    <div class="row">
+      <div class="visual">
+        <img class='screen' src="/images/placeholder-image.png" alt="">
+      </div>
+
+
+
+
     </div>
-
-    <h5>Technologies used:
+    <div class="info-panel">
+      <p>Technologies used: </p>
       <slot name="tech">
-         <br><span class="missing">HTML, CSS, JavaScript, API</span>
-      </slot>
-    </h5>
-
+        <br><p class="missing">HTML, CSS, JavaScript, API</p>
+         </slot>
+    </div>
   </article>
 
   <style>
@@ -42,19 +47,46 @@
     padding: 1rem;
     /* margin: 1rem; */
   /* block-size: 80%; */
-  background-color: rgb(214, 160, 245);
+  background-color: #ccf;
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   margin: 1rem;
+  position: relative;
+    }
+
+    .row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .info-panel{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffd23ff6;
+      padding: 1rem 0;
+    }
+
+    .info-panel p {
+      margin: 0 0.4rem;
+      line-height: 0.5rem;
+      padding: 0;
     }
 
     .visual{
+      justify-content: center;
+      align-items: center;
       margin-top: 1rem;
       display: flex;
       border: 1px solid black;
-      width: 50%;
+      width: 30%;
     }
 
     .screen{
       width: 100%;
     }
+
+
   </style>

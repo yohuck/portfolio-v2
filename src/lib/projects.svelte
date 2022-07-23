@@ -40,13 +40,15 @@ let moved;
 
 </script>
 
-
+<h2>Check out my work!</h2>
 
 <div class="scrollport"
 on:mousedown="{startMoving}"
 on:mousemove="{scrollPosition}"
 on:mouseup="{stopMoving}"
 bind:this={box}>
+
+
 
   <Sticky>
     <span slot="title">Recycle Better</span>
@@ -105,6 +107,10 @@ bind:this={box}>
 
 .proj + .proj {
     margin-left: 1rem;
+}
+
+a{
+  font-size: 0.8rem;
 }
 
 
