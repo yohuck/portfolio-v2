@@ -18,9 +18,11 @@
 
     <div class="description">
       <br>
+      <slot name="description" >
       <code>
-        <span name="description" class="missing">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+        <span class="missing">Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
       </code>
+    </slot>
     </div>
     <div class="row">
       <div class="visual">
@@ -40,6 +42,9 @@
   </article>
 
   <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
     .proj{
       height: calc(90vw - 2rem);
     max-height: 500px;

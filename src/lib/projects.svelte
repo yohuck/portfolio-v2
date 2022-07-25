@@ -54,6 +54,7 @@ bind:this={box}>
     <span slot="title">Recycle Better</span>
     <a href="https://yohuck.github.io/wish-cycle/" slot="github" >GitHub Repository</a>
     <a href="https://yohuck.github.io/wish-cycle/" slot="live">Live Site</a>
+    <span slot="description" class="description">An application to help conscious consumers quickly and easily find out whether given items are recyclable and how/where to recycle items.</span>
   </Sticky>
   <Sticky></Sticky>
   <Sticky></Sticky>
@@ -66,8 +67,17 @@ bind:this={box}>
   <div class="proj"><p>This is eight</p></div>
 </div>
 <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
      .scrollport::-webkit-scrollbar{
   display: none;
+}
+
+.description{
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1rem;
 }
 
 
