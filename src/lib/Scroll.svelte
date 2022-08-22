@@ -24,13 +24,17 @@
            
            
 
-            <h4>Hi There! I'm Eric</h4>
-            <p>
-                I'm a web developer living in Englewood, CO. I love building whimsical, bold UI and drinking coffee until it's time to drink wine.
+            <h4 class="hi-hero">Hi There! I'm Eric.</h4>
+            <p class="hero-p">
+                I'm a web developer living in Englewood, CO. I love building whimsical, bold UI, and drinking coffee until it's time to drink wine.
             </p>
-            <p>
+            <p class="hero-p">
+                Want to check out my resume? Download it <a download href=".\public\images\EricLakeResume.pdf">here</a>.
+            </p>
+            
+            <!-- <p class="hero-p">
                 I'm attending the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
-            </p>
+            </p> -->
 
         </article>
 
@@ -41,9 +45,9 @@
     </section>
     <section id="data">
 
-            <h6>Thanks for checking out my portfolio, As you can probably tell, I'm still working on it. You can reach me at ericlake@me.com</h6>
+            <!-- <h6>Thanks for checking out my portfolio, As you can probably tell, I'm still working on it. You can reach me at ericlake@me.com</h6> -->
 
-            <WorkInfo />
+            <!-- <WorkInfo /> -->
     </section>
 </div>
 
@@ -89,7 +93,15 @@
 
    .container::-webkit-scrollbar{
   display: none;
-}
+   }
+
+
+
+  .hero-p{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
 
 
 
@@ -135,7 +147,7 @@
         background-color: #FFD23F;
         padding: 2rem;
         width: 90%;
-        max-width: 500px;
+        max-width: 800px;
         z-index: 3;
         box-shadow: 10px 10px rgba(10, 9, 9, 0.795);
     }
@@ -154,7 +166,7 @@
     }
 
     h4{
-        font-size: clamp(2rem, 2rem + 5vw, 5rem);
+        font-size: clamp(1rem, 1rem + 8vw, 6rem);
         text-align: left;
         line-height: 1em;
         margin: 0rem auto;

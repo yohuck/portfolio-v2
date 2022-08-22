@@ -1,13 +1,13 @@
 <script>
 
-import ChunkyNav from './lib/chunkyNav.svelte';
+
 
 import Scroll from './lib/Scroll.svelte'
 import Svgs from './lib/svgs.svelte';
 import ContactForm from './lib/contact-form.svelte';
 import Header from './lib/header.svelte'
 import Blob from './lib/blob.svelte';
-import { create_animation } from 'svelte/internal';
+
 
 </script>
 <link rel="stylesheet" href="https://unpkg.com/transition-style">

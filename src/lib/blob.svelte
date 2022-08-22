@@ -18,7 +18,7 @@
     position: absolute;
     z-index: 1;
     animation: move 10s ease-in-out infinite;
-    color: #beb8b971;
+    color: #beb8b926;
     
 }
   .two{
@@ -26,34 +26,34 @@
     position: absolute;
     z-index: 1;
     animation: move2 14s ease-in-out infinite;
-    color: #62cc7971;
+    color: #62cc791a;
     
 }
   .three{
     /* transform: translateY(4rem) rotate(50deg) scale(40%); */
     position: absolute;
     z-index: 1;
-    animation: move2 40s ease-in-out infinite;
-    color: #cc626b71;
+    animation: move2 20s ease-in-out infinite;
+    color: #62cc741b;
     
 }
 
 @keyframes move {
   0%   { transform: scale(1) translate(-100%, 0%) rotate(0deg); }
-  30%  { transform: scale(0.5) translate(30%, 50vh) rotate(); }
+  30%  { transform: scale(1) translate(30%, 50vh) rotate(); }
   100%  { transform: scale(1) translate(100%, 0%) rotate(360deg); }
 }
 
 
 @keyframes move2 {
-  0%   { transform: scale(4) translate(50%, 0%) rotate(0deg); }
-  30%  { transform: scale(0.5) translate(30%, 50vh) rotate(); }
-  100%  { transform: scale(3) translate(-100%, 0%) rotate(360deg); }
+  0%   { transform: scale(1) translate(20%, 130%) rotate(0deg); }
+  50%  { transform: scale(1.5) translate(40%, 0vh) rotate(); }
+  100%  { transform: scale(2) translate(-20%, -130%) rotate(360deg); }
 }
 @keyframes move3 {
-  0%   { transform: scale(0.6) translate(10%, 40vh) rotate(0deg); }
-  30%  { transform: scale(0.5, 2) translate(30%, 50vh) rotate(); }
-  100%  { transform: scale(1) translate(100%, -40vh) rotate(-300deg); }
+  0%   { transform: scale(0.3) translate(10%, -40vh) rotate(0deg); }
+  30%  { transform: scale(0.5) translate(30%, 50vh) rotate(); }
+  100%  { transform: scale(0.8) translate(100%, 40vh) rotate(-300deg); }
 }
 
 /* .two{
