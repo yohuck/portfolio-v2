@@ -54,7 +54,7 @@ bind:this={box}>
     <span slot="title">Recycle Better</span>
     <a href="https://yohuck.github.io/wish-cycle/" slot="github" >GitHub Repository</a>
     <a href="https://yohuck.github.io/wish-cycle/" slot="live">Live Site</a>
-    <span slot="description" class="description">An application to help conscious consumers quickly and easily find out whether given items are recyclable and how/where to recycle items.</span>
+    <span slot="description" class="description">A mobile-first application to help conscious consumers quickly and easily find out whether household items are recyclable and how/where to properly dispose of those items.</span>
   </Sticky>
   <Sticky></Sticky>
   <Sticky></Sticky>
@@ -76,7 +76,6 @@ bind:this={box}>
 }
 
 .description{
-  font-family: 'Nothing You Could Do', cursive;
   font-size: 1rem;
 }
 

@@ -1,5 +1,5 @@
   
-  
+
   <article class="proj">
     <h3>
       <slot name="title">
@@ -25,25 +25,23 @@
     </slot>
     </div>
     <div class="row">
-      <div class="visual">
-        <img class='screen' src="/images/placeholder-image.png" alt="">
-      </div>
 
 
 
 
     </div>
     <div class="info-panel">
-      <p>Technologies used: </p>
-      <slot name="tech">
-        <br><p class="missing">HTML, CSS, JavaScript, API</p>
-         </slot>
-    </div>
+    
+        <p>Technologies used: </p>
+        <slot name="tech">
+        <p class="missing">HTML, CSS, JavaScript, API</p>
+           </slot>
+           </div>
   </article>
 
   <style>
 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 
     .proj{
       height: calc(90vw - 2rem);
@@ -65,33 +63,31 @@
     }
 
     .info-panel{
+      font-size: 0.8rem;
       position: absolute;
       width: 100%;
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: #ffd23ff6;
-      padding: 1rem 0;
+      background-color: hsla(46, 100%, 62%, 0.965);
+      padding: 0.5rem 0;
+      line-height: 0rem;
+      display: flex;
+      justify-content: space-between;
     }
 
     .info-panel p {
-      margin: 0 0.4rem;
+      margin: 0.4rem 0.4rem;
       line-height: 0.5rem;
       padding: 0;
     }
 
-    .visual{
-      justify-content: center;
-      align-items: center;
-      margin-top: 1rem;
-      display: flex;
-      border: 1px solid black;
-      width: 30%;
-    }
+
 
     .screen{
       width: 100%;
     }
+
 
 
   </style>
