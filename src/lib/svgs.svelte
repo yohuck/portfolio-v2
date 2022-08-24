@@ -115,7 +115,7 @@ import Counter from './Counter.svelte';
             Email Address:
             <input>
             Message:
-            <textarea  cols="30" rows="10"></textarea>
+            <textarea  cols="20" rows="5"></textarea>
             <button type="submit">
                 Submit
             </button>
@@ -166,18 +166,26 @@ svg{
         position: fixed;
         width: 5rem;
         max-width: 30rem;
-        z-index: 10;
+        z-index: 39;
     }
 
 
     form{
+        border-radius: 5px;
+        background-color: #FFD23F;
+        /* border: 4px solid black; */
+        margin: 6rem auto;
+        padding: 1rem 2rem;
+        max-width: 270px;
         display: flex;
         flex-direction: column;
         position: relative;
+        box-shadow: 5px 5px rgba(10, 9, 9, 0.795);
 
     }
 
     button{
+        border-radius: 5px;
         padding: 0.75em;
         font-family: monospace;
         border: none;
@@ -186,21 +194,22 @@ svg{
         background-color: #3BCEAC;
        margin: 1rem auto;
         max-width: 100px;
-    }
+        box-shadow: 4px 4px rgba(33, 27, 27, 0.795)    }
 
     .contact_container{
         position: fixed;
-        width: 80%;
-        max-width: 300px;
+        width: 100%;
+        height: 100%;
+        /* max-width: 300px; */
         margin: 0 auto;
-        background-color: #FFD23F;
-        z-index: 20;
+        background-color: #44404ffd;
+        z-index: 10;
         padding: 2rem;
         border-radius: 2px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        box-shadow: 10px 10px rgba(51, 50, 50, 0.596);
+        box-shadow: 10px 10px rgba(122, 125, 181, 0.596);
         transition: 0.6s;
         transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
@@ -213,6 +222,7 @@ svg{
 
     h1{
         margin-bottom: 0;
+        font-size: 1.5rem;
     }
 
     img{
