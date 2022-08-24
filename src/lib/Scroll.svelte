@@ -22,9 +22,10 @@
         },
         body: JSON.stringify({
             to: value,
-            message: 'Check out my portfolio at http://www.ericallenlake.com'
+            message: 'Thanks for checking out my portfolio! http://www.ericallenlake.com -E'
         })
     });
+    value = 'Check your phone!'
     const data = await response.json();
     // status = data.status;
     }
