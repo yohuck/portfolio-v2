@@ -5,6 +5,29 @@
     import Projects from "./projects.svelte";
     import WorkInfo from "./work-info.svelte";
 
+    let status = '';
+
+    let value = '+15555555'
+    console.log(value)
+
+    const handleClick = async () => {
+    console.log(value)
+    
+    
+    const response = await fetch('https://svelte-sms-8332.twil.io/sms', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            to: value,
+            message: 'Check out my portfolio at http://www.ericallenlake.com'
+        })
+    });
+    const data = await response.json();
+    // status = data.status;
+    }
 
 
 
@@ -31,6 +54,13 @@
             <p class="hero-p">
                 Want to check out my resume? Download it <a download href=".\public\images\EricLakeResume.pdf">here</a>.
             </p>
+            <p class="hero-p">
+                All of my work is implemented mobile-first. Want to view on your phone? 
+            </p>
+            <form action="" method="">
+                <input type="phone" name="" id="" placeholder="555-555-5555" bind:value={value} > <button on:click|preventDefault={handleClick} id="sub">Text Me</button>
+                <div>{status}</div>
+            </form>
             
             <!-- <p class="hero-p">
                 I'm attending the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
@@ -189,6 +219,23 @@
 #work{
     position: relative;
 }
+
+form{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    widows: 100%;
+    max-width: 280px;
+}
+
+input, #sub{
+    background-color: #1d0e261a;
+    padding: 0.4rem;
+    font-size: 0.95rem;
+    font-family:monospace;
+}
+
 
 
 

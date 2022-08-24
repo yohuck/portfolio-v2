@@ -42,7 +42,7 @@ let closeDrawer = () => {
             <a href="#work" on:click={closeDrawer}>Work</a>
         </li>
         <li>
-            <a href="#data" on:click={closeDrawer} >Data</a>
+            <a href="#data" on:click={closeDrawer} >Stack</a>
         </li>
         <li>
             <a href="#" on:click={openContact}>Contact</a>
