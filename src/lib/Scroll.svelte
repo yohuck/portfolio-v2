@@ -54,13 +54,15 @@
             <p class="hero-p">
                 Want to check out my resume? Download it <a download href=".\public\images\EricLakeResume.pdf">here</a>.
             </p>
-            <p class="hero-p">
-                All of my work is implemented mobile-first. Want to view on your phone? 
-            </p>
-            <form action="" method="">
-                <input type="phone" name="" id="" placeholder="555-555-5555" bind:value={value} > <button on:click|preventDefault={handleClick} id="sub">Text Me</button>
-                <div>{status}</div>
-            </form>
+            <div class="mobile">
+                <p class="hero-p">
+                    All of my work is implemented mobile-first. Want to view on your phone?
+                </p>
+                <form action="" method="">
+                    <input type="phone" name="" id="" placeholder="555-555-5555" bind:value={value} > <button on:click|preventDefault={handleClick} id="sub">Text Me</button>
+                    <div>{status}</div>
+                </form>
+            </div>
             
             <!-- <p class="hero-p">
                 I'm attending the University of Denver Full Stack Bootcamp program and am hoping to land my first job as a web developer.
@@ -131,6 +133,8 @@
     font-size: 1rem;
     font-weight: 500;
   }
+
+
 
 
 
@@ -236,13 +240,19 @@ input, #sub{
     font-family:monospace;
 }
 
-
+.mobile{
+    display: none;
+}
 
 
 
 @media only screen and (min-width: 500px) {
     .container{
         scroll-behavior: smooth;
+    }
+
+    .mobile{
+        display: block;
     }
 }
 
