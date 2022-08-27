@@ -24,19 +24,14 @@
       </code>
     </slot>
     </div>
-    <div class="row">
-
-
-
-
-    </div>
-    <div class="info-panel">
     
-        <p>Technologies used: </p>
+    <div class="info-panel">
         <slot name="tech">
         <p class="missing">HTML, CSS, JavaScript, API</p>
            </slot>
            </div>
+
+      
   </article>
 
   <style>
@@ -44,7 +39,7 @@
 
 
     .proj{
-      height: calc(90vw - 2rem);
+    height: calc(90vw - 2rem);
     max-height: 500px;
     aspect-ratio: 1;
     padding: 1rem;
@@ -54,12 +49,18 @@
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
   margin: 1rem;
   position: relative;
+  
     }
 
     .row{
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    iframe{
+      width: 60%;
+      height: 80%;
     }
 
     .info-panel{
@@ -77,8 +78,9 @@
     }
 
     .info-panel p {
-      margin: 0.4rem 0.4rem;
-      line-height: 0.5rem;
+      font-size: 1rem;
+      margin: 0rem 1rem;
+      line-height: 1rem;
       padding: 0;
     }
 

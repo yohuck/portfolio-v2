@@ -51,16 +51,29 @@ bind:this={box}>
 
 
   <Sticky>
+    <span slot="title">Habit Stack</span>
+    <a href="https://github.com/yohuck/habit-map" slot="github" target="_blank">GitHub Repository</a>
+    <a href="https://habitstack.herokuapp.com/" slot="live" target="_blank">Live Site</a>
+    <span slot="description" class="description">A simple and satisfying full-stack habit tracking tool that utilizes a custom CSS/JavaScript data visualization. <br> Check out my walkthrough video over there  <span class="pointer">👉</span></span>
+    <p slot="tech" >Node.Js, Handlebars, Express, Sequelize, Custom CSS</p>
+    
+  </Sticky>
+  <div class="proj">
+    <div class="row">
+      <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6965074918954741760?compact=1" height="399" width="710" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+    </div>
+  </div>
+  <Sticky>
     <span slot="title">Recycle Better</span>
-    <a href="https://yohuck.github.io/wish-cycle/" slot="github" >GitHub Repository</a>
-    <a href="https://yohuck.github.io/wish-cycle/" slot="live">Live Site</a>
+    <a href="https://github.com/yohuck/wish-cycle" slot="github" target="_blank" >GitHub Repository</a>
+    <a href="https://yohuck.github.io/wish-cycle/" slot="live" target="_blank">Live Site</a>
     <span slot="description" class="description">A mobile-first application to help conscious consumers quickly and easily find out whether household items are recyclable and how/where to properly dispose of those items.</span>
+ 
   </Sticky>
   <Sticky></Sticky>
   <Sticky></Sticky>
   <Sticky></Sticky>
-  <Sticky></Sticky>
-  <div class="proj"><p>This is four</p></div>
+  
   <div class="proj"><p>This is five</p></div>
   <div class="proj"><p>This is siz</p></div>
   <div class="proj"><p>This is seven</p></div>
@@ -79,6 +92,10 @@ bind:this={box}>
   font-size: 1rem;
 }
 
+iframe{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 
 
@@ -121,6 +138,27 @@ bind:this={box}>
 a{
   font-size: 0.8rem;
 }
+
+.row{
+  background-color: black;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+
+
+p {
+      font-size: 1rem;
+      margin: 0rem 1rem;
+      line-height: 1rem;
+      padding: 0;
+    }
+
+
+
+
 
 
 </style>
